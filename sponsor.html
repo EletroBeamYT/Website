@@ -11,18 +11,29 @@
       padding: 0;
       background: #000000;
       color: #ffffff;
+      text-align: center;
     }
+
 
     header {
       background-color: #4ef700;
       color: white;
-      padding: 2.5rem 2rem;
+      padding: 1rem ;
       text-align: center;
     }
 
-    nav {
-      background-color: #333;
+    .header2 {
+      background-color: ;
+      color: white;
+      padding: 2.5rem 2rem;
+      text-align: center;
       display: flex;
+    }
+
+    nav {
+      display: flex;
+      padding: 1rem;
+      background-color: #000000;
       justify-content: center;
       padding: 0.5rem 0;
     }
@@ -41,15 +52,35 @@
       padding: 2rem;
     }
 
+    video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: cover;
+    transform: translate(-50%, -50%);
+    }
+
     footer {
       text-align: center;
       background-color: #4ef700;
       color: white;
       padding: 1rem;
       position: relative;
+      top: 900px;
       bottom: 0;
       width: 100%;
+      flex-direction: column;
     }
+
+    .back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
   </style>
 </head>
 <body>
@@ -59,6 +90,7 @@
     <p>Here you can contact me if you are looking for a sponsorship deal!</p>
   </header>
 
+  <header2><video autoplay muted loop src="MONEY!!!.mp4" class="back-video"><video></video></header2>
   <nav>
     <a href="index.html">Home</a>
     <a href="Socials.html">Socials</a>
@@ -74,10 +106,12 @@
             Contact me at via Gmail if you are looking to be sponsored! Just Gmail me at EletroBeamYT@gmail.com to get started!
     </body>
 
+     
 
 <main>
-        <h2>This Website Is Still Being Made And Is Not Finished.</h2>
+        
 
   <footer>
+     <h2>This Website Is Still Being Made And Is Not Finished.</h2>
     &copy; 2025 EletroBeam | Built with ChatGPT (cuz im a dumby dumb)
   </footer>
