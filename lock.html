@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Protected Page</title>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      if (password === "ChickenJocky") {
+        window.location.href = "unlocked.html";
+      } else {
+        alert("Wrong password!");
+      }
+    }
+  </script>
+  <style>
+
+header {
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .centerimage{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #000000;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+
+  </style>
+
+<header>
+    <h1>Password Zone</h1>
+    <p>Find the password to continue</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Socials.html">Socials</a>
+    <a href="contact.html">Contact</a>
+    <a href="sponsor.html">Sponsorship</a>
+    <a href="lock.html">Password</a>
+  </nav>
+
+</head>
+<body>
+  <h2 class = "centerimage" >Enter Password to Access</h2>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Enter</button>
+</body>
+</html>
+
