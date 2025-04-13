@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Protected Page</title>
+  <title>Password Zone</title>
+  <link rel="viewport" href="video.css">
   <script>
     function checkPassword() {
       var password = document.getElementById("password").value;
@@ -15,9 +16,12 @@
   <style>
 
 header {
-      background-color: #000000;
+  padding: 17rem 0.01rem;
+      background-color: ;
       color: rgb(255, 255, 255);
-      padding: 2.5rem 2rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
       text-align: center;
     }
 
@@ -34,6 +38,7 @@ header {
       background: #000000;
       color: #ffffff;
       text-align: center;
+      vertical-align: middle;
     }
 
     nav a:hover {
@@ -41,9 +46,46 @@ header {
     }
 
 
+
+
+    video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: cover;
+    transform: translate(-50%, -50%);
+    }
+
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+
+
   </style>
 
+
 <header>
+  <video autoplay muted loop src="green code for website.mp4" class="back-video"><video></video>
     <h1>Password Zone</h1>
     <p>Find the password to continue</p>
   </header>
@@ -58,7 +100,7 @@ header {
 
 </head>
 <body>
-  <h2 class = "centerimage" >Enter Password to Access</h2>
+  <h2 class = "centerimage" >Enter Password to Access Secret</h2>
   <input type="password" id="password">
   <button onclick="checkPassword()">Enter</button>
 </body>
